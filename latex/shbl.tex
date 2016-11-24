@@ -1,0 +1,109 @@
+\documentclass{report}
+\usepackage[cp1251]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath, amssymb, latexsym}
+\usepackage{mathrsfs}
+
+\makeatletter
+\renewcommand{\section}{\@startsection
+{section}%
+{2}%
+{0mm}%
+{-\baselineskip}%
+{0.5\baselineskip}%
+{\normalfont\large\bfseries}}
+\makeatother
+
+\setcounter{section}{7}
+\newcounter{nrazd}
+\setcounter{nrazd}{0}
+\newcommand{\razd}[1]{\addtocounter{nrazd}{1}
+\setcounter{equation}{0}
+\textbf{\thenrazd. #1}}
+\renewcommand{\theequation}{\thenrazd.\arabic{equation}}
+\renewcommand{\thesection}{\S\ \arabic{section}.}
+\newcommand{\bm}[1]{\mbox{\boldmath{\(#1\)}}}
+
+\newtheorem{lemma}{\hspace{\parindent}Лемма}
+\newtheorem{lemman}{\hspace{\parindent}Лемма}
+\renewcommand{\thelemma}{\!\!.}
+\renewcommand{\thelemman}{\arabic{lemman}.}
+
+\newtheorem{theorema}{\hspace{\parindent}Теорема}
+\newtheorem{theoreman}{\hspace{\parindent}Теорема}
+\renewcommand{\thetheorema}{\!\!.}
+\renewcommand{\thetheoreman}{\arabic{theoreman}.}
+
+\begin{document}
+Здесь должен быть Ваш текст. Ниже примеры,
+которые могут Вам потребоваться. Потом удалить!
+
+Для заголовка параграфа использовать команду:
+
+\section{Обыкновенные дифференциальные уравнения}
+В строке \verb"\setcounter{section}{7}"
+вместо <<7>> поставить число на единицу меньшее номера параграфа
+из Вашего фрагмента текста.
+
+Для заголовка раздела использовать команду:
+
+\razd{Система уравнений первого порядка.}\\
+В строке \verb"\setcounter{nrazd}{0}"
+вместо <<0>> поставить число на единицу меньшее первого раздела
+Вашего фрагмента текста.
+
+Если первое нумерованное уравнение встречается раньше заголовка
+раздела, то перед строкой\\
+\verb"\renewcommand{\theequation}{\thenrazd.\arabic{equation}}"\\
+вставить строку
+\verb"\setcounter{equation}{n}",
+где n на единицу меньше номера уравнения.
+
+Индекс под символом \(\underset{1}{y}\) и индекс над символом  \(\overset{*}{t}\).
+
+Полужирный и наклонный в математических формулах: \(\bm{X}\), \bm{R}.
+
+Символы неравенств: \(\leqslant\), \(\geqslant\).
+
+Угловые скобки: \(\langle x \rangle\).
+
+Рукописное L: \(\mathscr{L}\).
+
+\begin{lemma}
+Формулировка леммы.
+\end{lemma}
+\begin{lemman}
+Формулировка леммы.
+\end{lemman}
+
+\begin{theorema}
+Формулировка теоремы.
+\end{theorema}
+
+\begin{theoreman}
+Формулировка теоремы.
+\end{theoreman}
+
+Нумерованная формула
+\begin{equation} \label{eq1.1}
+\underset{1}{y}=f(x,y),
+\end{equation}
+и ссылка на эту формулу (\ref{eq1.1}).
+
+Многострочное уравнение с четным числом строк и одним номером
+(уравнения Коши-Римана):
+
+\begin{equation}\begin{array}{rcl}
+u_x &=& -v_y,\\[3pt]
+v_x &=& u_y.
+\end{array}\end{equation}
+
+Многоточие по ширине формулы (многочлены Чебышева):
+\[\begin{array}{rcl}
+T_0(x)&=&1,\\[3pt]
+T_1(x)&=&x,\\[3pt]
+\multicolumn{3}{c}{\dotfill}\\[3pt]
+T_{n+1}(x)&=&2xT_n(x)-T_{n-1}(x),\\[3pt]
+\multicolumn{3}{c}{\dotfill}
+\end{array}\]
+\end{document} 

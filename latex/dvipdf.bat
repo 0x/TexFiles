@@ -1,0 +1,1 @@
+c:\texmf\miktex\bin\dvipdfm %1

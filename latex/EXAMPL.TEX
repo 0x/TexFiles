@@ -1,0 +1,802 @@
+\documentclass[12pt]{article}
+\usepackage[cp1251]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath, amssymb, latexsym}
+\usepackage[bookmarksopen=false,colorlinks=true]{hyperref}
+\usepackage[monochrome]{color}
+
+
+\topmargin =-2.5cm
+\oddsidemargin=-1.5cm
+\textheight 26.7cm
+\textwidth 19cm
+
+\begin{document}
+
+\tableofcontents
+
+\section{Виды шрифтов}
+
+\noindent
+{\rm Романский}   \\
+{\it Курсив}      \\
+{\bf Жирный}      \\
+{\sc ПРОПИСНОЙ}   \\
+{\sf Рубленный}   \\
+{\sl Наклонный}   \\
+{\tt Машинописный}\\
+
+\section{Размеры шрифтов}
+
+{\tiny Крошечный}          \\
+{\scriptsize Индексный}    \\
+{\footnotesize Подстрочный}\\
+{\small Маленький}         \\
+{\normalsize Стандартный}  \\
+{\large Большой}           \\
+{\Large Большой}           \\
+{\LARGE Большой}           \\
+{\huge Огромный}           \\
+{\Huge Огромный}           \\
+
+\section{Математические акценты}
+
+\begin{tabular}{|l|l||l|l||l|l||l|l|}
+\hline
+$\backslash$hat$\{$x$\}$   & $\hat{x}$   &
+$\backslash$check$\{$x$\}$ & $\check{x}$ &
+$\backslash$breve$\{$x$\}$ & $\breve{x}$ &
+$\backslash$acute$\{$x$\}$ & $\acute{x}$ \\
+\hline
+$\backslash$grave$\{$x$\}$ & $\grave{x}$ &
+$\backslash$tilde$\{$x$\}$ & $\tilde{x}$ &
+$\backslash$bar$\{$x$\}$   & $\bar{x}$   &
+$\backslash$vec$\{$x$\}$   & $\vec{x}$   \\
+\hline
+$\backslash$dot$\{$x$\}$   & $\dot{x}$   &
+$\backslash$ddot$\{$x$\}$  & $\ddot{x}$  &
+                           &             &
+                           &             \\
+\hline
+\end{tabular}
+
+%\newpage
+\section{Строчные греческие буквы}
+
+\begin{tabular}{|l|l||l|l||l|l||l|l|}
+\hline
+$\backslash$alpha      & $\alpha$      &
+$\backslash$beta       & $\beta$       &
+$\backslash$gamma      & $\gamma$      &
+$\backslash$delta      & $\delta$      \\
+\hline
+$\backslash$epsilon    & $\epsilon$    &
+$\backslash$varepsilon & $\varepsilon$ &
+$\backslash$zeta       & $\zeta$       &
+$\backslash$eta        & $\eta$        \\
+\hline
+$\backslash$theta      & $\theta$      &
+$\backslash$vartheta   & $\vartheta$   &
+$\backslash$iota       & $\iota$       &
+$\backslash$kappa      & $\kappa$      \\
+\hline
+$\backslash$lambda     & $\lambda$     &
+$\backslash$mu         & $\mu$         &
+$\backslash$nu         & $\nu$         &
+$\backslash$xi         & $\xi$         \\
+\hline
+$\backslash$tau        & $\tau$        &
+$\backslash$upsilon    & $\upsilon$    &
+$\backslash$varpi      & $\varpi$      &
+$\backslash$rho        & $\rho$        \\
+\hline
+$\backslash$varrho     & $\varrho$     &
+$\backslash$sigma      & $\sigma$      &
+$\backslash$varsigma   & $\varsigma$   &
+o                      & $o$           \\
+\hline
+$\backslash$pi         & $\pi$         &
+$\backslash$phi        & $\phi$        &
+$\backslash$varphi     & $\varphi$     &
+$\backslash$chi        & $\chi$        \\
+\hline
+$\backslash$psi        & $\psi$        &
+$\backslash$omega      & $\omega$      &
+                       &               &
+                       &               \\
+\hline
+\end{tabular}
+
+\section{Прописные греческие буквы}
+
+\begin{tabular}{|l|l||l|l||l|l||l|l|}
+\hline
+$\backslash$Gamma   & $\Gamma$   &
+$\backslash$Delta   & $\Delta$   &
+$\backslash$Theta   & $\Theta$   &
+$\backslash$Lambda  & $\Lambda$  \\
+\hline
+$\backslash$Xi      & $\Xi$      &
+$\backslash$Pi      & $\Pi$      &
+$\backslash$Sigma   & $\Sigma$   &
+$\backslash$Upsilon & $\Upsilon$ \\
+\hline
+$\backslash$Phi     & $\Phi$     &
+$\backslash$Psi     & $\Psi$     &
+$\backslash$Omega   & $\Omega$   &
+                    &            \\
+\hline
+\end{tabular}
+
+\section{Дополнительные символы}
+
+\begin{tabular}{|l|l||l|l||l|l||l|l|}
+\hline
+$\backslash$infty       & $\infty$       &
+$\backslash$Box         &                &
+$\backslash$Diamond     &                &
+$\backslash$triangle    & $\triangle$    \\
+\hline
+$\backslash$clubsuit    & $\clubsuit$    &
+$\backslash$diamondsuit & $\diamondsuit$ &
+$\backslash$heartsuit   & $\heartsuit$   &
+$\backslash$spadesuit   & $\spadesuit$   \\
+\hline
+$\backslash$mho         &                &
+$\backslash$prime       & $\prime$       &
+$\backslash$emptyset    & $\emptyset$    &
+$\backslash$nabla       & $\nabla$\\
+\hline
+$\backslash$surd        & $\surd$        &
+$\backslash$top         & $\top$         &
+$\backslash$bot         & $\bot$         &
+$\backslash$$|$         & $\|$\\
+\hline
+$\backslash$angle       & $\angle$       &
+$\backslash$smallint    & $\smallint$    &
+$\backslash$forall      & $\forall$      &
+$\backslash$exists      & $\exists$      \\
+\hline
+$\backslash$neg         & $\neg$         &
+$\backslash$flat        & $\flat$        &
+$\backslash$natural     & $\natural$     &
+$\backslash$sharp       & $\sharp$       \\
+\hline
+$\backslash$backslash   & $\backslash$   &
+$\backslash$partial     & $\partial$     &
+$\backslash$aleph       & $\aleph$       &
+$\backslash$hbar        & $\hbar$        \\
+\hline
+$\backslash$imath       & $\imath$       &
+$\backslash$jmath       & $\jmath$
+& $\backslash$ell       & $\ell$         &
+$\backslash$wp          & $\wp$          \\
+\hline
+$\backslash$Re          & $\Re$          &
+$\backslash$Im          & $\Im$          &
+                        &                &
+                        &                \\
+\hline
+\end{tabular}
+
+\newpage
+\section{Символы бинарных операций}
+
+\begin{tabular}{|l|l||l|l||l|l||l|l|}
+\hline
++                           & $+$                &
+$\backslash$oplus           & $\oplus$           &
+$\backslash$ominus          & $\ominus$          &
+$\backslash$otimes          & $\otimes$          \\
+\hline
+$\backslash$oslash          & $\oslash$          &
+$\backslash$odot            & $\odot$            &
+$\backslash$bigcirc         & $\bigcirc$         &
+$\backslash$dagger          & $\dagger$          \\
+\hline
+$\backslash$ddagger         & $\ddagger$         &
+$\backslash$amalg           & $\amalg$           &
+-                           & $-$                &
+$\backslash$cap             & $\cap$             \\
+\hline
+$\backslash$cup             & $\cup$             &
+$\backslash$uplus           & $\uplus$           &
+$\backslash$sqcap           & $\sqcap$           &
+$\backslash$vee             & $\vee$             \\
+\hline
+$\backslash$wedge           & $\wedge$           &
+$\backslash$setminus        & $\setminus$        &
+$\backslash$wr              & $\wr$              &
+$\backslash$diamond         & $\diamond$         \\
+\hline
+$\backslash$bigtriangleup   & $\bigtriangleup$   &
+$\backslash$bigtriangledown & $\bigtriangledown$ &
+$\backslash$triangleleft    & $\triangleleft$    &
+$\backslash$triangleright   & $\triangleright$   \\
+\hline $ \backslash$lhd      &               & $\backslash$rhd & &
+$\backslash$unlhd& &
+$\backslash$unrhd           &                    \\
+\hline
+$\backslash$pm              & $\pm$              &
+$\backslash$mp              & $\mp$              &
+$\backslash$times           & $\times$           &
+$\backslash$div             & $\div$             \\
+\hline
+$\backslash$ast             & $\ast$             &
+$\backslash$star            & $\star$            &
+$\backslash$circ            & $\circ$            &
+$\backslash$bullet          & $\bullet$          \\
+\hline
+$\backslash$cdot            & $\cdot$            &
+                            &                    &
+                            &                    &
+                            &                    \\
+\hline
+\end{tabular}
+
+\section{Символы сравнения}
+
+\begin{tabular}{|l|l||l|l||l|l||l|l|}
+\hline
+$< $                   & $<$           &
+$\backslash$leq        & $\leq$&
+$\backslash$prec       & $\prec$       &
+$\backslash$preceq     & $\preceq$     \\
+\hline
+$\backslash$ll         & $\ll$         &
+$\backslash$subset     & $\subset$     &
+$\backslash$subseteq   & $\subseteq$   &
+$\backslash$sqsubset   &   \\
+\hline
+$\backslash$sqsubseteq &  &
+$\backslash$in         & $\in$ &
+$>$                    & $>$ &
+$\backslash$geq        & $\geq$        \\
+\hline
+$\backslash$succ       & $\succ$       &
+$\backslash$succeq     & $\succeq$     &
+$\backslash$gg         & $\gg$         &
+$\backslash$supset     & $\supset$     \\
+\hline
+$\backslash$supseteq   & $\supseteq$   &
+$\backslash$sqsupset   &   &
+$\backslash$ni         & $\ni$         &
+=                      & $=$\\
+\hline
+$\backslash$sim        & $\sim$        &
+$\backslash$simeq      & $\simeq$      &
+$\backslash$asymp      & $\asymp$      &
+$\backslash$approx     & $\approx$     \\
+\hline
+$\backslash$cong       & $\cong$       &
+$\backslash$bowtie     & $\bowtie$     &
+$\backslash$doteq      & $\doteq$      &
+$\backslash$propto     & $\propto$     \\
+\hline
+$\backslash$vdash      & $\vdash$      &
+$\backslash$equiv      & $\equiv$      &
+$\backslash$models     & $\models$     &
+$\backslash$perp       & $\perp$       \\
+\hline
+$\backslash$mid        & $\mid$        &
+$\backslash$parallel   & $\parallel$   &
+$\backslash$neq        & $\neq$&
+$\backslash$Join       &        \\
+\hline
+$\backslash$smile      & $\smile$      &
+$\backslash$frown      & $\frown$      &
+$\backslash$dashv      & $\dashv$      &
+                       &               \\
+\hline
+\end{tabular}
+
+
+\section{Символы переменного размера}
+\hspace{\parindent}\(\sum, \prod, \coprod, \int, \oint, \bigcap,
+\bigcup, \bigsqcup, \bigvee, \bigwedge, \bigodot, \bigotimes, \bigoplus,
+\biguplus\)
+
+
+В выключенной математической моде размер этих символов больше.
+
+$$\sum, \prod, \coprod, \int, \oint, \bigcap, \bigcup, \bigsqcup,
+\bigvee, \bigwedge, \bigodot, \bigotimes, \bigoplus, \biguplus$$
+
+\begin{tabular}{|l|l||l|l||l|l||l|l|}
+\hline
+$\backslash$sum       & $\sum$       &
+$\backslash$prod      & $\prod$      &
+$\backslash$coprod    & $\coprod$    &
+$\backslash$int       & $\int$       \\
+\hline
+$\backslash$oint      & $\oint$      &
+$\backslash$bigcap    & $\bigcap$    &
+$\backslash$bigcup    & $\bigcup$    &
+$\backslash$bigsqcup  & $\bigsqcup$  \\
+\hline
+$\backslash$bigvee    & $\bigvee$    &
+$\backslash$bigwedge  & $\bigwedge$  &
+$\backslash$bigodot   & $\bigodot$   &
+$\backslash$bigotimes & $\bigotimes$ \\
+\hline
+$\backslash$bigoplus  & $\bigoplus$  &
+$\backslash$biguplus  & $\biguplus$  &
+                      &              &
+                      &              \\
+\hline
+\end{tabular}
+
+\section{Разделители}
+
+\begin{tabular}{|l|l||l|l||l|l||l|l|}
+\hline
+(                       & $($            &
+[                       & $[$            &
+$\backslash$$\{$        & $\{$           &
+$\backslash$lfloor      & $\lfloor$      \\
+\hline
+$\backslash$lceil       & $\lceil$       &
+$\backslash$langle      & $\langle$      &
+/                       & $/$            &
+$|$                     & $|$            \\
+\hline
+)                       & $)$            &
+]                       & $]$            &
+$\backslash$$\}$        & $\}$           &
+$\backslash$rfloor      & $\rfloor$      \\
+\hline
+$\backslash$rceil       & $\rceil$       &
+$\backslash$rangle      & $\rangle$      &
+$\backslash$backslash   & $\backslash$   &
+$\backslash$$\|$        & $\||$\\
+\hline
+$\backslash$uparrow     & $\uparrow$\    &
+$\backslash$downarrow   & $\downarrow$   &
+$\backslash$updownarrow & $\updownarrow$ &
+$\backslash$Uparrow     & $\Uparrow$     \\
+\hline
+$\backslash$Downarrow   & $\Downarrow$   &
+$\backslash$Updownarrow & $\Updownarrow$ &
+                        &                &
+                        &                \\
+\hline
+\end{tabular}
+
+\section{Стрелки}
+
+\begin{tabular}{|l|l||l|l|}
+\hline
+$\backslash$leftarrow          & $\leftarrow$          &
+$\backslash$Leftarrow          & $\Leftarrow$          \\
+\hline
+$\backslash$rightarrow         & $\rightarrow$         &
+$\backslash$Rightarrow         & $\Rightarrow$         \\
+\hline
+$\backslash$leftrightarrow     & $\leftrightarrow$     &
+$\backslash$Leftrightarrow     & $\Leftrightarrow$     \\
+\hline
+$\backslash$mapsto             & $\mapsto$             &
+$\backslash$hookleftarrow      & $\hookleftarrow$      \\
+\hline
+$\backslash$leftharpoonup      & $\leftharpoonup$      &
+$\backslash$leftharpoondown    & $\leftharpoondown$    \\
+\hline
+$\backslash$rightleftharpoons  & $\rightleftharpoons$  &
+$\backslash$uparrow            & $\uparrow$            \\
+\hline
+$\backslash$Uparrow            & $\Uparrow$            &
+$\backslash$downarrow          & $\downarrow$          \\
+\hline
+$\backslash$Downarrow          & $\Downarrow$          &
+$\backslash$updownarrow        & $\updownarrow$        \\
+\hline
+$\backslash$longleftarrow      & $\longleftarrow$      &
+$\backslash$Longleftarrow      & $\Longleftarrow$      \\
+\hline
+$\backslash$longrightarrow     & $\longrightarrow$     &
+$\backslash$Longrightarrow     & $\Longrightarrow$     \\
+\hline
+$\backslash$longleftrightarrow & $\longleftrightarrow$ &
+$\backslash$Longleftrightarrow & $\Longleftrightarrow$ \\
+\hline
+$\backslash$longmapsto         & $\longmapsto$         &
+$\backslash$hookrightarrow     & $\hookrightarrow$     \\
+\hline
+$\backslash$rightharpoonup     & $\rightharpoonup$     &
+$\backslash$rightharpoondown   & $\rightharpoondown$   \\
+\hline
+$\backslash$leadsto            &                       &
+$\backslash$Updownarrow        & $\Updownarrow$        \\
+\hline $\backslash$nearrow     & $\nearrow$            &
+$\backslash$searrow            & $\searrow$            \\
+\hline $\backslash$swarrow     & $\swarrow$            &
+$\backslash$nwarrow            & $\nwarrow$            \\
+\hline
+\end{tabular}
+
+\section{AMS символы}
+
+\begin{tabular}{|l|l||l|l||l|l|}
+\hline
+$\backslash$hbar & $\hbar$ &
+$\backslash$hslash & $\hslash$ &
+$\backslash$backprime & $\backprime$ \\
+\hline
+$\backslash$varnothing & $\varnothing$ &
+$\backslash$vartriangle & $\vartriangle$ &
+$\backslash$triangledown & $\triangledown$ \\
+\hline
+$\backslash$circledS & $\circledS$ &
+$\backslash$bigstar & $\bigstar$ &
+$\backslash$angle & $\angle$ \\
+\hline
+$\backslash$sphericalangle & $\sphericalangle$ &
+$\backslash$measuredangle & $\measuredangle$ &
+$\backslash$nexists & $\nexists$ \\
+\hline
+$\backslash$Game & $\Game$ &
+$\backslash$dotplus & $\dotplus$ &
+$\backslash$smallsetminus & $\smallsetminus$ \\
+\hline
+$\backslash$ltimes & $\ltimes$ &
+$\backslash$rtimes & $\rtimes$ &
+$\backslash$Cap & $\Cap$ \\
+\hline
+$\backslash$Cup & $\Cup$ &
+$\backslash$boxplus & $\boxplus$ &
+$\backslash$leftthreetimes & $\leftthreetimes$ \\
+\hline
+$\backslash$rightthreetimes & $\rightthreetimes$ &
+$\backslash$curlywedge & $\curlywedge$ &
+$\backslash$curlyvee & $\curlyvee$ \\
+\hline
+$\backslash$circleddash & $\circleddash$ &
+$\backslash$blacktriangleleft & $\blacktriangleleft$ &
+$\backslash$blacktriangleright & $\blacktriangleright$ \\
+\hline
+$\backslash$blacktriangle & $\blacktriangle$ &
+$\backslash$blacktriangledown & $\blacktriangledown$ &
+$\backslash$square & $\square$ \\
+\hline
+$\backslash$blacksquare & $\blacksquare$ &
+$\backslash$lozenge & $\lozenge$ &
+$\backslash$blacklozenge & $\blacklozenge$ \\
+\hline
+$\backslash$complement & $\complement$ &
+$\backslash$mho & $\mho$ &
+$\backslash$eth & $\eth$ \\
+\hline
+$\backslash$Finv & $\Finv$ &
+$\backslash$diagup & $\diagup$ &
+$\backslash$diagdown & $\diagdown$ \\
+\hline
+$\backslash$Bbbk & $\Bbbk$ &
+$\backslash$barwedge & $\barwedge$ &
+$\backslash$veebar & $\veebar$ \\
+\hline
+$\backslash$doublebarwedge & $\doublebarwedge$ &
+$\backslash$boxminus & $\boxminus$ &
+$\backslash$boxtimes & $\boxtimes$ \\
+\hline
+$\backslash$boxdot & $\boxdot$ &
+$\backslash$circledast & $\circledast$ &
+$\backslash$circledcirc & $\circledcirc$ \\
+\hline
+$\backslash$centerdot & $\centerdot$ &
+$\backslash$divideontimes & $\divideontimes$ &
+$\backslash$intercal & $\intercal$ \\
+\hline
+$\backslash$therefore & $\therefore$ &
+$\backslash$because & $\because$ &
+&\\\hline
+\end{tabular}
+
+\section{AMS неравенства}
+
+\begin{tabular}{|l|l||l|l||l|l|}
+\hline
+$\backslash$leqq & $\leqq$ &
+$\backslash$geqq & $\geqq$ &
+$\backslash$leqslant & $\leqslant$ \\
+\hline
+$\backslash$geqslant & $\geqslant$ &
+$\backslash$eqslantless & $\eqslantless$ &
+$\backslash$eqslantgtr & $\eqslantgtr$ \\
+\hline
+$\backslash$lesssim & $\lesssim$ &
+$\backslash$gtrsim & $\gtrsim$ &
+$\backslash$lessapprox & $\lessapprox$ \\
+\hline
+$\backslash$gtrapprox & $\gtrapprox$ &
+$\backslash$approxeq & $\approxeq$ &
+$\backslash$eqcirc & $\eqcirc$ \\
+\hline
+$\backslash$risingdotseq & $\risingdotseq$ &
+$\backslash$circeq & $\circeq$ &
+$\backslash$fallingdotseq & $\fallingdotseq$ \\
+\hline
+$\backslash$triangleq & $\triangleq$ &
+$\backslash$backsim & $\backsim$ &
+$\backslash$thicksim & $\thicksim$ \\
+\hline
+$\backslash$backsimeq & $\backsimeq$ &
+$\backslash$thickapprox & $\thickapprox$ &
+$\backslash$subseteqq & $\subseteqq$ \\
+\hline
+$\backslash$supseteqq & $\supseteqq$ &
+$\backslash$succapprox & $\succapprox$ &
+$\backslash$vartriangleleft & $\vartriangleleft$ \\
+\hline
+$\backslash$vartriangleright & $\vartriangleright$ &
+$\backslash$trianglelefteq & $\trianglelefteq$ &
+$\backslash$trianglerighteq & $\trianglerighteq$ \\
+\hline
+$\backslash$vDash & $\vDash$ &
+$\backslash$Vdash & $\Vdash$ &
+$\backslash$Vvdash & $\Vvdash$ \\
+\hline
+$\backslash$smallsmile & $\smallsmile$ &
+$\backslash$lessdot & $\lessdot$ &
+$\backslash$gtrdot & $\gtrdot$ \\
+\hline
+$\backslash$lll & $\lll$ &
+$\backslash$ggg & $\ggg$ &
+$\backslash$lessgtr & $\lessgtr$ \\
+\hline
+$\backslash$gtrless & $\gtrless$ &
+$\backslash$lesseqgtr & $\lesseqgtr$ &
+$\backslash$gtreqless & $\gtreqless$ \\
+\hline
+$\backslash$lesseqqgtr & $\lesseqqgtr$ &
+$\backslash$gtreqqless & $\gtreqqless$ &
+$\backslash$doteqdot & $\doteqdot$ \\
+\hline
+$\backslash$Subset & $\Subset$ &
+$\backslash$Supset & $\Supset$ &
+$\backslash$sqsubset & $\sqsubset$ \\
+\hline
+$\backslash$sqsupset & $\sqsupset$ &
+$\backslash$preccurlyeq & $\preccurlyeq$ &
+$\backslash$succcurlyeq & $\succcurlyeq$ \\
+\hline
+$\backslash$curlyeqprec & $\curlyeqprec$ &
+$\backslash$curlyeqsucc & $\curlyeqsucc$ &
+$\backslash$precsim & $\precsim$ \\
+\hline
+$\backslash$succsim & $\succsim$ &
+$\backslash$precapprox & $\precapprox$ &
+$\backslash$smallfrown & $\smallfrown$ \\
+\hline
+$\backslash$bumpeq & $\bumpeq$ &
+$\backslash$Bumpeq & $\Bumpeq$ &
+$\backslash$shortmid & $\shortmid$ \\
+\hline
+$\backslash$shortparallel & $\shortparallel$ &
+$\backslash$between & $\between$ &
+$\backslash$pitchfork & $\pitchfork$ \\
+\hline
+$\backslash$varpropto & $\varpropto$ &
+$\backslash$backepsilon & $\backepsilon$ &
+&\\\hline
+\end{tabular}
+
+\section{AMS отрицания}
+
+\begin{tabular}{|l|l||l|l||l|l|}
+\hline
+$\backslash$nless & $\nless$ &
+$\backslash$ngtr & $\ngtr$ &
+$\backslash$nleq & $\nleq$ \\
+\hline
+$\backslash$ngeq & $\ngeq$ &
+$\backslash$nleqslant & $\nleqslant$ &
+$\backslash$ngeqslant & $\ngeqslant$ \\
+\hline
+$\backslash$nleqq & $\nleqq$ &
+$\backslash$ngeqq & $\ngeqq$ &
+$\backslash$lneq & $\lneq$ \\
+\hline
+$\backslash$gneq & $\gneq$ &
+$\backslash$npreceq & $\npreceq$ &
+$\backslash$nsucceq & $\nsucceq$ \\
+\hline
+$\backslash$precneqq & $\precneqq$ &
+$\backslash$succneqq & $\succneqq$ &
+$\backslash$precnsim & $\precnsim$ \\
+\hline
+$\backslash$succnsim & $\succnsim$ &
+$\backslash$precnapprox & $\precnapprox$ &
+$\backslash$succnapprox & $\succnapprox$ \\
+\hline
+$\backslash$nsim & $\nsim$ &
+$\backslash$ncong & $\ncong$ &
+$\backslash$ntrianglelefteq & $\ntrianglelefteq$ \\
+\hline
+$\backslash$ntrianglerighteq & $\ntrianglerighteq$ &
+$\backslash$nsubseteq & $\nsubseteq$ &
+$\backslash$nsupseteq & $\nsupseteq$ \\
+\hline
+$\backslash$nsubseteqq & $\nsubseteqq$ &
+$\backslash$nsupseteqq & $\nsupseteqq$ &
+$\backslash$subsetneq & $\subsetneq$ \\
+\hline
+$\backslash$lneqq & $\lneqq$ &
+$\backslash$gneqq & $\gneqq$ &
+$\backslash$lvertneqq & $\lvertneqq$ \\
+\hline
+$\backslash$gvertneqq & $\gvertneqq$ &
+$\backslash$lnsim & $\lnsim$ &
+$\backslash$gnsim & $\gnsim$ \\
+\hline
+$\backslash$lnapprox & $\lnapprox$ &
+$\backslash$gnapprox & $\gnapprox$ &
+$\backslash$nprec & $\nprec$ \\
+\hline
+$\backslash$nsucc & $\nsucc$ &
+$\backslash$nshortmid & $\nshortmid$ &
+$\backslash$nshortparallel & $\nshortparallel$ \\
+\hline
+$\backslash$nmid & $\nmid$ &
+$\backslash$nparallel & $\nparallel$ &
+$\backslash$nvdash & $\nvdash$ \\
+\hline
+$\backslash$nvDash & $\nvDash$ &
+$\backslash$nVdash & $\nVdash$ &
+$\backslash$nVDash & $\nVDash$ \\
+\hline
+$\backslash$ntriangleleft & $\ntriangleleft$ &
+$\backslash$ntriangleright & $\ntriangleright$ &
+$\backslash$supsetneq & $\supsetneq$ \\
+\hline
+$\backslash$varsubsetneq & $\varsubsetneq$ &
+$\backslash$varsupsetneq & $\varsupsetneq$ &
+$\backslash$subsetneqq & $\subsetneqq$ \\
+\hline
+$\backslash$supsetneqq & $\supsetneqq$ &
+$\backslash$varsubsetneqq & $\varsubsetneqq$ &
+$\backslash$varsupsetneqq & $\varsupsetneqq$ \\
+\hline
+\end{tabular}
+
+\newpage
+\section{Функции}
+
+\begin{tabular}{|l|l||l|l||l|l||l|l|}
+\hline
+$\backslash$arccos & $\arccos$ &
+$\backslash$arcsin & $\arcsin$ &
+$\backslash$arctan & $\arctan$ &
+$\backslash$cos    & $\cos$    \\
+\hline
+$\backslash$cosh   & $\cosh$   &
+$\backslash$cot    & $\cot$    &
+$\backslash$coth   & $\coth$   &
+$\backslash$csc    & $\csc$    \\
+\hline
+$\backslash$deg    & $\deg$    &
+$\backslash$det    & $\det$    &
+$\backslash$dim    & $\dim$    &
+$\backslash$exp    & $\exp$    \\
+\hline
+$\backslash$gcd    & $\gcd$    &
+$\backslash$hom    & $\hom$    &
+$\backslash$inf    & $\inf$    &
+$\backslash$ker    & $\ker$    \\
+\hline
+$\backslash$lg     & $\lg$     &
+$\backslash$lim    & $\lim$    &
+$\backslash$liminf & $\liminf$ &
+$\backslash$limsup & $\limsup$ \\
+\hline
+$\backslash$ln     & $\ln$     &
+$\backslash$log    & $\log$    &
+$\backslash$max    & $\max$    &
+$\backslash$min    & $\min$    \\
+\hline
+$\backslash$Pr     & $\Pr$     &
+$\backslash$sec    & $\sec$    &
+$\backslash$sin    & $\sin$    &
+$\backslash$sinh   & $\sinh$   \\
+\hline
+$\backslash$sup    & $\sup$    &
+$\backslash$tan    & $\tan$    &
+$\backslash$tanh   & $\tanh$   &
+                   &           \\
+\hline
+\end{tabular}
+
+
+\section{Буквы каллиграфии}
+\verb|{\cal}|
+
+\noindent%
+\(\cal A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V,
+W, X, Y, Z\)
+
+\section{Готические буквы}
+\verb|\mathfrak{}|
+
+\noindent%
+\(\mathfrak{A\ a\ B\ b\ C\ c\ D\ d\ E\ e\ F\ f\ G\ g\ H\ h\ I\ i\ J\ j\ K\ k\ L\ l\ M\ m}\)
+
+\noindent%
+\(\mathfrak{N\ n\ O\ o\ P\ p\ Q\ q\ R\ r\ S\ s\ T\ t\ U\ u\ V\ v\ W\ w\ X\ x\ Y\ y\ Z\ z}\)
+
+\section{ Матрицы}
+
+\vskip 1cm
+
+\[ \left(\begin{array}{ccc}
+a_1^1&a_1^2&a_1^3\\ a_2^1&a_2^2&a_2^3\\ a_3^1&a_3^2&a_3^3\\
+\end{array}\right) \]
+
+\setcounter{equation}{3} \addtocounter{equation}{-2}
+\begin{equation} \left(\begin{array}{ccc}
+a_1^1&a_1^2&a_1^3\\ a_2^1&a_2^2&a_2^3\\ a_3^1&a_3^2&a_3^3\\
+\end{array}\right)
+\end{equation}
+
+\vskip 1cm
+
+\[\left(\begin{array}{c}
+x_1\\ \vdots \\ x_n
+\end{array}\right)\]
+
+\vskip 1cm
+
+\[\left(\begin{array}{lcr}
+\lambda_1&&0 \\ & \ddots & \\ 0&&\lambda_n
+\end{array}\right)\]
+
+\vskip 1cm
+
+\[\left(\begin{array}{lcr}
+\lambda_1&&0 \\ & \ddots & \\ 0&&\lambda_n
+\end{array}\right)
+\left(\begin{array}{c} x_1\\ \vdots \\ x_n
+\end{array}\right)
+=
+\left(\begin{array}{c} \lambda_1 x_1\\ \vdots \\ \lambda_n x_n
+\end{array}\right)\]
+
+\vskip 1cm
+
+\[\sigma(x) = \left\{
+\begin{array}{rl}
+-1,& \mbox{если } x < 0 \\
+0, & \mbox{если } x = 0 \\
+1, & \mbox{если } x > 0 \\
+
+\end{array} \right. \]
+
+\[
+\begin{array}{ccc}
+a_1^1&\cdots&a_1^n\\
+\vdots&\ddots&\vdots\\
+a_n^1&\cdots&a_n^n\\
+\end{array}\]
+
+\section{Примеры формул}
+
+\[e^{i\pi} = -1,\]
+
+\[\prod_{k=1}^{\infty} \biggl(1 - \frac{1}{(2k+1)^2}\biggr) = \frac{2}{\pi},\]
+
+\[\prod\nolimits_{k=1}^{\infty} \biggl(1 - \frac{1}{(2k+1)^2}\biggr) = \frac{2}{\pi},\]
+
+\[\sum_{k=1}^{\infty} \frac{1}{(2k-1)^2} = \frac{\pi^2}{8},\]
+
+\[\sum\nolimits_{k=1}^{\infty} \frac{1}{(2k-1)^2} = \frac{\pi^2}{8},\]
+
+\[\frac{\partial u}{\partial t} + u \frac{\partial u}{\partial x} +
+   \frac{\partial^3 u}{\partial x^3} = 0,\]
+
+\[\int a^x dx = \frac{a^x}{\ln a},\]
+
+\[\int_{-\infty}^{\infty} dx \exp(-x^2) = \sqrt{\pi},\]
+
+\[\int\limits_{-\infty}^{\infty} dx \exp(-x^2) = \sqrt{\pi}.\]
+
+\[\underset{1}{y}=f(x,y)\]
+
+\end{document}

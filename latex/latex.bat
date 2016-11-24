@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\latex" %1
